@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 
 class Post(BaseModel):
-    userId: int# noqa: N815
+    userId: int  # noqa: N815
     id: int
     title: str
     body: str
