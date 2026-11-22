@@ -43,3 +43,4 @@ Requires Python 3.14 and [uv](https://docs.astral.sh/uv/).
 - [Design intent](docs/DESIGN_INTENT.md): what the project aims to do and why.
 - [References](docs/REFERENCES.md): sources. The EU AI Act is used as design
   inspiration only, not as a legal obligation.
+- [Benchmark](docs/BENCHMARK.md): a small experiment comparing async and sync HTTP requests.

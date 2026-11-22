@@ -6,7 +6,7 @@
 > item is marked **implemented** or **planned**. "Planned" is never a claim that
 > it already works.
 
-Last updated: 2026-11-09
+Last updated: 2026-11-22
 
 ## 1. Goal
 
@@ -86,6 +86,9 @@ piece is built, and recorded in a separate decisions document.
 - **Integrity.** Each entry gets a hash and is linked to the previous one, so
   altering history is detectable. A hash proves a record was not changed. It
   does **not** prove the content is correct, and it does not detect drift.
+  Signatures are planned but not decided yet. A signature would prove which
+  component wrote an entry. Language models cannot hold keys, so the component
+  that writes to the log would sign on behalf of each agent.
 - **Drift judges.** Light checks run often and measure progress toward the
   objective. An agent that spends tokens without progress is stopped.
   Deeper cross-model verification is kept for uncertain or high-risk steps,

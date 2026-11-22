@@ -1,6 +1,6 @@
 # Benchmark: async vs sync HTTP requests
 
-> Measured on <YYYY-MM-DD>. This is a small learning experiment, not a
+> Measured on 2026-11-20. This is a small learning experiment, not a
 > general measurement.
 
 ## Question
@@ -23,8 +23,7 @@ fetching them one by one (`requests`)? By how much?
 - **Timing:** `time.perf_counter()` around each whole call, rounded to 4
   decimals.
 - **Raw data:** [`benchmark_results.csv`](../benchmark_results.csv).
-- **Environment:** Ubuntu, Python 3.14, httpx 0.28.1, requests 2.34.2,
-  <Wi-Fi or cable>.
+- **Environment:** Ubuntu, Python 3.14, httpx 0.28.1, requests 2.34.2, Wi-Fi.
 
 To repeat it: `uv run python benchmark_runner_day4_async.py`.
 
