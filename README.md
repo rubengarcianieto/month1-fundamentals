@@ -1,26 +1,17 @@
-<p align="center">
-  <img src="docs/assets/snail-logo.png" alt="SNAIL logo" width="360">
-</p>
+# month1-fundamentals
 
-# SNAIL
+Practice projects from month 1 of an 8-month study plan on AI orchestration:
+HTTP, JSON, pydantic, async and testing. They are the technical groundwork
+for [SNAIL](https://github.com/rubengarcianieto/snail).
 
-SNAIL is a personal, non-commercial multi-agent system built by hand, as part
-of an 8-month study plan on AI orchestration. It uses a blackboard architecture:
-several models write to a shared "blackboard", and a different model family
-is meant to verify each result.
+## Contents
 
-## Status
-
-Month 1 of 8 (completed): Python fundamentals, HTTP, pydantic, async and testing.
-Implemented so far:
-
-- The first version of the blackboard entry schema, with tests.
-- An async weather client (a practice project) with retries, pydantic
-  validation and offline tests.
-
-The rest of the design is planned.
-
-Month 2 continues in [month2-cli-agent](https://github.com/rubengarcianieto/month2-cli-agent).
+- `day2_*.py`: HTTP requests and the `requests` response object.
+- `day3_*.py`: pydantic models and validation errors.
+- `day4_async.py`: async vs sync requests, with a benchmark
+  (see [BENCHMARK.md](docs/BENCHMARK.md)).
+- `day5_weather_client.py`: async weather client with retries, pydantic
+  validation and offline tests (`day5_weather_test.py`).
 
 ## Setup
 
@@ -31,18 +22,3 @@ Requires Python 3.14 and [uv](https://docs.astral.sh/uv/).
 ## Run the tests
 
     uv run pytest -v
-
-## Design invariants (planned)
-
-1. Append-only log.
-2. Other agents' content is always data, never instructions.
-3. The verifier is never the same model family as the producer.
-4. Iteration cap, with escalation to a human.
-5. Traceability: model, version, and prompt hash.
-
-## Documents
-
-- [Design intent](docs/DESIGN_INTENT.md): what the project aims to do and why.
-- [References](docs/REFERENCES.md): sources. The EU AI Act is used as design
-  inspiration only, not as a legal obligation.
-- [Benchmark](docs/BENCHMARK.md): a small experiment comparing async and sync HTTP requests.

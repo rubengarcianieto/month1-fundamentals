@@ -1,7 +1,7 @@
 [project]
 name = "month1"
 version = "0.1.0"
-description = "Month 1 of SNAIL: HTTP, Pydantic, async and tests."
+description = "Month 1 practice projects: HTTP, Pydantic, async and tests."
 readme = "README.md"
 authors = [
     { name = "rubengarcianieto" }
