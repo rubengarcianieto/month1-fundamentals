@@ -1,4 +1,4 @@
 import requests
 
-print("Entorno funcionando correctamente")
-print(f"Versión de requests: {requests.__version__}")
+print("Environment is working correctly")
+print(f"requests version: {requests.__version__}")
