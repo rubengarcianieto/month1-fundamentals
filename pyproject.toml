@@ -1,10 +1,10 @@
 [project]
-name = "mes1"
+name = "month1"
 version = "0.1.0"
-description = "Add your description here"
+description = "Month 1 of SNAIL: HTTP, Pydantic, async and tests."
 readme = "README.md"
 authors = [
-    { name = "rubengarcianieto", email = "rubengarcianietoempresa@gmail.com" }
+    { name = "rubengarcianieto" }
 ]
 requires-python = ">=3.14"
 dependencies = [
@@ -15,7 +15,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mes1 = "mes1:main"
+month1 = "month1:main"
 
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
