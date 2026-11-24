@@ -11,7 +11,7 @@ is meant to verify each result.
 
 ## Status
 
-Month 1 of 8: Python fundamentals, HTTP, pydantic, async and testing.
+Month 1 of 8 (completed): Python fundamentals, HTTP, pydantic, async and testing.
 Implemented so far:
 
 - The first version of the blackboard entry schema, with tests.
@@ -19,6 +19,8 @@ Implemented so far:
   validation and offline tests.
 
 The rest of the design is planned.
+
+Month 2 continues in [month2-cli-agent](https://github.com/rubengarcianieto/month2-cli-agent).
 
 ## Setup
 
